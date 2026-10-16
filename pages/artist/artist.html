@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marify</title>
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.png" />
+  <script defer type="module" src="./artist.js"></script>
+  <script defer type="module" src="/services/artist.service.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Marify</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Artists</a>
+          <a class="nav-link" href="/pages/album/album.html">Albums</a>
+          <a class="nav-link" href="#">Songs</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <form class="w-50 mt-3 mx-auto">
+    <fieldset>
+      <legend class="text-center">Crear artista</legend>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" name="name" id="name" class="form-control" aria-describedby="input para el nombre">
+      </div>
+      <div class="mb-3">
+        <label for="genere" class="form-label">Genero</label>
+        <input name="genere" id="genere" type="text" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="country" class="form-label">Pais de Origen</label>
+        <input name="country" id="country" type="text" class="form-control">
+      </div>
+      <button class="btn btn-primary w-100" type="submit">Crear</button>
+    </fieldset>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
